@@ -14,3 +14,16 @@ if (user === "guest") {
 } else if (user === "employee") {
     console.log("Succesfully Logged in");
 }
+
+
+
+let name = "Anthony";
+let nameLength = name.length;
+
+if (nameLength > 5) {
+    alert("More than 5 letters")
+} else if (nameLength == 5) {
+    alert("Exaclty 5 letters")
+} else {
+    alert("Less than 5 letters")
+}
