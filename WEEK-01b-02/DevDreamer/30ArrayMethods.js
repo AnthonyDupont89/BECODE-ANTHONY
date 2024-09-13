@@ -5,6 +5,6 @@ fruits.push('plum', 'grapes');
 
 fruits.splice(3, 1, 'lemon');
 
-fruits.sort();
+// fruits.sort();
 
 console.log(fruits);
