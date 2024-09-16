@@ -1,9 +1,10 @@
-
+let command;
 const todos = [];
-const list = [];
+let list = [];
+let num;
 
 while (command != "quit") {
-    let command = prompt(`Write down a command :
+    command = prompt(`Write down a command :
     > "new" to add a todo
     > "list" to see all the todos
     > "delete" to remove a specific todo 
@@ -23,7 +24,7 @@ while (command != "quit") {
             break;
 
         case 'delete':
-            let num = prompt("Enter the number in your todo list");
+            num = prompt("Enter the number in your todo list");
             todos.splice(num-1, 1)
             break
 
