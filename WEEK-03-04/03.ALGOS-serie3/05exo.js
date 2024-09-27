@@ -1,21 +1,23 @@
 let convert = (temperature) => {
-    let degreeC = "";
+    let degrees = "";
     for (char of temperature) {
         if(char == '-' || char == '.' || !isNaN(char)) {
-            degreeC += char; 
+            degrees += char; 
         }
-        parseFloat(degreeC)
+        parseFloat(degrees);
     }
-    let degreeF = (degreeC*9/5) + 32;
-    console.log(`${degreeF}°F`);
+    
+    if (temperature.includes("C")) {
+        degrees = (degrees*9/5) + 32;
+        console.log(`${Math.round(degrees)}°F`);
+    } else if (temperature.includes("F")) {
+        degrees = (degrees-32)/9*5;
+        console.log(`${Math.round(degrees)}°C`);
+    } else {
+        console.log("Error");
+    }
 }
-
-
-// FORMULE : (0 °C × 9/5) + 32 = 32 °F
-// let fahrenheit = (celcius*9/5) + 32
 
 convert("35°C") // "95°F"
 convert("19°F") // "-7°C"
 convert("33") // "Error"
-
-let degree = 35;
