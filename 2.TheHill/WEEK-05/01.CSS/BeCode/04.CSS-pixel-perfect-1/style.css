@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    background-color: #D74949;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Roboto', 'sans serif';
+}
+
+main {
+    background-color: #F3F3F3;
+    max-width: 1110px;
+    min-height: 615px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+h1 {
+    width: 64px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    /* display: inline-block; */
+    
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.p {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p span {
+    color: #8F2727;
+}
+
+.card {
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.card img {
+    width: 200px;
+}
+
+.social {
+    padding: 15px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.job {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.social img {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+footer p {
+    background-color: #3A3A3A;
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    max-width: 1440px;
+    height: 70px;
+    padding: 27px;
+    text-align: center ;
+    
+}
