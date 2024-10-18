@@ -1,7 +1,4 @@
 
-
-
-
 const listItem0 = document.querySelectorAll("ul li");
 console.log(listItem0); // __proto__: NodeList (la méthode forEach fonctionne)
 
