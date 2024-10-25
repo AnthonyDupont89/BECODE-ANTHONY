@@ -15,13 +15,13 @@
 
   <form action="">
     <label for="username">enter username:</label>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" placeholder="username" required>
     <br><br>
     <label for="email">enter email:</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" placeholder="your email" required>
     <br><br>
     <label for="password">password:</label>
-    <input type="password" id="password" name="password">
+    <input type="password" id="password" name="password" placeholder="choose a password" required>
     
     <p>Select your age:</p>
     <input type="radio" name="age" value="0-25" id="option-1">
@@ -47,8 +47,11 @@
 
     <br><br>
 
-    <label for="bio">Your bio</label><br>
-    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+    <label for="bio">Your bio:</label><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+    <br>
+    <input type="submit" value="submit the form">
   </form>
 
   <br>

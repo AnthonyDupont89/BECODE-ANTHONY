@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <form action="">
+    <div class="field username">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <p class="msg">*must be only lowercase and at least 5 characters and at most 10 characters</p>
+    </div>
+
+    <div class="field email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <p class="msg">*should be a valid email adress</p>
+    </div>
+
+    <div class="field password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <p class="msg">*should be at least 8 characters and at most 15 characters</p>  
+    </div>
+
+    <div class="field passwordConfirm">
+      <label for="passwordConfirm">Password confirmation:</label>
+      <input type="password" id="passwordConfirm" name="passwordConfirm">
+      <p class="msg">*should be the same as password</p>
+    </div>
+
+    <input class="btn" type="submit" value="submit the form">
+  </form>
+</body>
+</html>

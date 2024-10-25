@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+}
+
+.msg {
+  font-size: 12px;
+  opacity: 0;
+}
+
+.error input {
+  border: 1px solid red;
+}
+.error .msg {
+  color: red;
+}
+
+.success input {
+  border: 1px solid rgb(71, 255, 71);
+}
+
+.success .msg {
+  opacity: 0;
+}
+
+.error .msg {
+  opacity: 1;
+}
