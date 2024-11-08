@@ -1,0 +1,38 @@
+header {
+  font-family: 'Inria sans';
+  background-color: #141517;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    
+    .logo{ 
+      font-size: 36px;
+      font-weight: 700;
+      span {
+        color: #cc0000;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      list-style-type: none;
+      font-size: 14px;
+      font-weight: 700;
+      a {
+        text-decoration: none;
+        padding: 7px 10px;
+        border-radius: 5px;
+        &:hover {
+          background-color: #cc0000;
+        }
+      }
+    }
+  }
+}

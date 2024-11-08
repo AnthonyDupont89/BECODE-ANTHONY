@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo"><span>Be</span>Movies</h1>
+      <nav>
+        <ul>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#latest">Latest</a></li>
+          <li><a href="#genres">Genres</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>      
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section class="searchBar">
+        <form action="">
+          <input type="text" id="movieSearch">
+          <button type="submit"><img src="assets/icons/searchArrow.svg" alt=""></button>
+        </form>
+      </section>
+
+      <section class="searchResult hidden">
+        <h2 class="sectionTitle">Results for "<span>input</span>"</h2>
+        <div class="swiper">
+          <div class="swiper-button-prev">
+            <img class="swiper-button-prev" src="assets/icons/arrowL.svg" alt="">
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/icons/arrowR.svg" alt="">
+          </div>  
+        </div>
+      </section>
+
+      <section class="latestReleases">
+        <h2 class="sectionTitle">Latest releases</h2>
+        <div class="swiper">
+          <div class="swiper-button-prev">
+            <img class="swiper-button-prev" src="assets/icons/arrowL.svg" alt="">
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/icons/arrowR.svg" alt="">
+          </div>  
+        </div>
+      </section>
+
+      <section class="moviesByGenre">
+        <div class="genres">
+          <h2>Movies by genre</h2>
+          <nav>
+            <ul>
+              <li><a href="#"><span>Genre</span></a></li>
+              <li><a href="#"><span>Genre</span></a></li>
+              <li><a href="#"><span>Genre</span></a></li>
+              <li><a href="#"><span>Genre</span></a></li>
+              <li><a href="#"><span>Genre</span></a></li>
+              <li><a href="#"><span>Genre</span></a></li>
+            </ul>
+          </nav>      
+        </div>
+        <h2 class="sectionTitle">Genres</h2>
+        <div class="swiper">
+          <div class="swiper-button-prev">
+            <img class="swiper-button-prev" src="assets/icons/arrowL.svg" alt="">
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/icons/arrowR.svg" alt="">
+          </div>  
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h1 class="logo"><span>Be</span>Movies</h1>
+      <nav>
+        <ul>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#latest">Latest</a></li>
+          <li><a href="#genres">Genres</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>      
+      <p class="copyright">@2023 - All rights reserved</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

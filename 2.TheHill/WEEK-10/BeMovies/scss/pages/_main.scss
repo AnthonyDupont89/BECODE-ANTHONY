@@ -1,0 +1,131 @@
+/* GLOBAL ////////////////////////////////////////////////////////// */
+
+main {
+  font-family: 'Inter';
+  background-color: #191b20;
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* SECTIONS ////////////////////////////////////////////////////////// */
+
+.searchBar {
+  margin: 50px auto 50px;
+  /* align-self: center;
+  margin-top: 40px; */
+  form {
+    display: flex;
+  }
+  input {
+    color: #141517;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    background-color: #cc0000;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 15px 41px;
+}
+
+.swiper {
+  display: flex;
+  gap: 22px;
+  width: 100%;
+  .swiper-button-prev, .swiper-button-next {
+    // reset
+    position: relative;
+    top: unset; /* Réinitialise la position verticale */
+    width: auto; /* Remet la largeur à la valeur par défaut */
+    height: auto; /* Remet la hauteur à la valeur par défaut */
+    margin-top: 0; /* Supprime le décalage de marge en haut */
+    left: auto;
+    right: auto;
+    &:after {
+      display: none;
+    }
+  }
+  .swiper-wrapper {
+    justify-content: space-between;
+  }
+  .swiper-slide {
+    background-color: #b1b2bd;
+    max-width: 234px;
+    height: 351px;
+  }
+  margin-bottom: 100px;
+}
+
+.searchResult {
+
+}
+
+.latestReleases {
+
+}
+
+.moviesByGenre {
+  display: flex;
+  flex-direction: column;
+}
+.genres {
+  margin: 0 auto 40px;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+    border-bottom: solid white 1px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: #cc0000;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
