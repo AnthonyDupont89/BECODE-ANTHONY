@@ -28,7 +28,7 @@
   
   <main>
     <div class="container">
-      <section class="searchBar">
+      <section class="searchBar" id="search">
         <form action="">
           <input type="text" id="movieSearch">
           <button type="submit"><img src="assets/icons/searchArrow.svg" alt=""></button>
@@ -54,7 +54,7 @@
       </section>
 
       <section class="latestReleases">
-        <h2 class="sectionTitle">Latest releases</h2>
+        <h2 class="sectionTitle" id="latest">Latest releases</h2>
         <div class="swiper">
           <div class="swiper-button-prev">
             <img class="swiper-button-prev" src="assets/icons/arrowL.svg" alt="">
@@ -73,7 +73,7 @@
 
       <section class="moviesByGenre">
         <div class="genres">
-          <h2>Movies by genre</h2>
+          <h2 id="genres">Movies by genre</h2>
           <nav>
             <ul>
               <li><a href="#"><span>Genre</span></a></li>
@@ -100,6 +100,28 @@
             <img src="assets/icons/arrowR.svg" alt="">
           </div>  
         </div>
+      </section>
+
+      <section class="popupMovie">
+        <a href=""><img class="cross" src="assets\icons\cross.svg" alt=""></a>
+        <div class="content">
+          <div class="poster">
+            <img src="assets\images\godfather.jpg" alt="">
+          </div>
+
+          <div class="info">
+            <h2 class="title">The Godfather</h2>
+            <h3 class="year">1972</h3>
+            <h2 class="rate"><img src="assets\icons\star.svg" alt=""> 8.7</h2>
+            <h3 class="genre">Crime / Drama</h3>
+            <p class="synopsis">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
+            <div class="cast">
+              <h3>Cast:</h3>
+              <p class="actors">Marlon Brando, Al Pacino, James Caan,
+                Robert Duvall</p>
+            </div>
+          </div>
+      </div>
       </section>
   </main>
 

@@ -103,10 +103,6 @@ main .container {
   flex-direction: column;
 }
 
-.hidden {
-  display: none;
-}
-
 /* SECTIONS ////////////////////////////////////////////////////////// */
 .searchBar {
   margin: 50px auto 50px;
@@ -196,4 +192,81 @@ main .container {
 }
 .genres ul a:hover {
   background-color: #cc0000;
+}
+
+.popupMovie {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  width: 742px;
+  height: 526px;
+  background-color: #000000;
+  font-family: "Inria sans";
+}
+.popupMovie .cross {
+  position: fixed;
+  margin: 15px;
+  width: 16px;
+}
+.popupMovie .content {
+  display: flex;
+  padding: 80px;
+}
+.popupMovie .content .poster {
+  width: 50%;
+}
+.popupMovie .content .poster img {
+  width: 234px;
+  height: 351px;
+  border: solid white 1px;
+}
+.popupMovie .content .info {
+  width: 50%;
+}
+.popupMovie .content .info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+.popupMovie .content .info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.popupMovie .content .info .title {
+  margin-bottom: 5px;
+}
+.popupMovie .content .info .year {
+  margin-bottom: 10px;
+}
+.popupMovie .content .info .rate {
+  font-family: "Inter";
+  align-content: center;
+  margin-bottom: 15px;
+}
+.popupMovie .content .info .genre {
+  margin-bottom: 15px;
+}
+.popupMovie .content .info .synopsis {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 40px;
+}
+.popupMovie .content .info .cast {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.popupMovie .content .info .cast .actors {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

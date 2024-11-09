@@ -10,7 +10,7 @@ main {
 }
 
 .hidden {
-  display: none;
+  // display: none;
 }
 
 
@@ -111,6 +111,94 @@ main {
       border-radius: 5px;
       &:hover {
         background-color: #cc0000;
+      }
+    }
+  }
+}
+
+
+
+
+// MODALE ////////////////////////////////////////////////////////////////////////
+
+.popupMovie {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row ;
+  width: 742px;
+  height: 526px;
+  background-color: #000000;
+  font-family: 'Inria sans';
+  
+  
+  .cross{
+    position: fixed;
+    margin: 15px;
+    width: 16px;
+  }
+
+  .content {
+    display: flex;
+    padding: 80px;
+    .poster{
+      width: 50%;
+      img {
+        width: 234px;
+        height: 351px;
+        border: solid white 1px  ;
+      }
+      
+    }
+  
+    .info {
+      width: 50%;
+      h2 {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #cc0000;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .title {
+        margin-bottom: 5px;
+      }
+      .year {
+        margin-bottom: 10px;
+      }
+      .rate {
+        font-family: 'Inter';
+        align-content: center;
+        margin-bottom: 15px;
+      }
+      .genre {
+        margin-bottom: 15px;
+      }
+      .synopsis {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        margin-bottom: 40px;
+      }
+      .cast {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .actors {
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.03em;
+          text-align: left;
+        }
       }
     }
   }
