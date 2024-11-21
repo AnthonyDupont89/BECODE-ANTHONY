@@ -1,0 +1,31 @@
+.swiper {
+  margin-bottom: 100px;
+}
+
+.swiper-wrapper {
+  
+}
+
+.swiper-slide {
+  // max-width: 234px;
+  // height: 351px;
+  // img {
+  //   width: 100%; /* Prend toute la largeur du conteneur */
+  //   height: 100%; /* Prend toute la hauteur du conteneur */
+  //   object-fit: cover;
+  // }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  // reset
+  // position: relative;
+  // top: unset; /* Réinitialise la position verticale */
+  // width: auto; /* Remet la largeur à la valeur par défaut */
+  // height: auto; /* Remet la hauteur à la valeur par défaut */
+  // margin-top: 0; /* Supprime le décalage de marge en haut */
+  // left: auto;
+  // right: auto;
+  // &:after {
+  //   display: none;
+  // }
+}

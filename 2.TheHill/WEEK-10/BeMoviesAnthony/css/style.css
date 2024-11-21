@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
@@ -14,6 +13,7 @@
 .container {
   max-width: 1080px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -126,39 +126,18 @@ main .container {
   border: none;
   padding: 10px;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .sectionTitle {
   font-size: 16px;
   font-weight: 400;
-  margin: 0 0 15px 41px;
+  margin-bottom: 15px;
+  padding: 0 50px;
 }
 
-.swiper {
-  display: flex;
-  gap: 22px;
-  width: 100%;
+.searchResult {
   margin-bottom: 100px;
-}
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-  position: relative;
-  top: unset; /* Réinitialise la position verticale */
-  width: auto; /* Remet la largeur à la valeur par défaut */
-  height: auto; /* Remet la hauteur à la valeur par défaut */
-  margin-top: 0; /* Supprime le décalage de marge en haut */
-  left: auto;
-  right: auto;
-}
-.swiper .swiper-button-prev:after, .swiper .swiper-button-next:after {
-  display: none;
-}
-.swiper .swiper-wrapper {
-  justify-content: space-between;
-}
-.swiper .swiper-slide {
-  background-color: #b1b2bd;
-  max-width: 234px;
-  height: 351px;
 }
 
 .moviesByGenre {
@@ -194,14 +173,27 @@ main .container {
   background-color: #cc0000;
 }
 
+.swiper {
+  margin: 0 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide img {
+  border: solid white 1px;
+  width: 234px;
+  height: 351px;
+}
+
 .popupMovie {
+  display: none;
   position: fixed;
   top: 200px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
-  display: flex;
-  flex-direction: row;
   width: 742px;
   height: 526px;
   background-color: #000000;

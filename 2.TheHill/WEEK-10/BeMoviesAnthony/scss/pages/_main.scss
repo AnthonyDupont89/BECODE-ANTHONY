@@ -1,0 +1,144 @@
+/* GLOBAL ////////////////////////////////////////////////////////// */
+
+main {
+  font-family: 'Inter';
+  background-color: #191b20;
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hidden {
+  // display: none;
+}
+
+
+
+
+
+
+
+
+/* SECTIONS ////////////////////////////////////////////////////////// */
+
+.searchBar {
+  margin: 50px auto 50px;
+  /* align-self: center;
+  margin-top: 40px; */
+  form {
+    display: flex;
+  }
+  input {
+    color: #141517;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    background-color: #cc0000;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding: 0 50px;
+}
+
+
+.searchResult {
+  margin-bottom: 100px;
+  // padding: 0 50px;
+}
+
+
+
+.latestReleases {
+
+}
+
+.moviesByGenre {
+  display: flex;
+  flex-direction: column;
+}
+.genres {
+  margin: 0 auto 40px;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+    border-bottom: solid white 1px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: #cc0000;
+      }
+    }
+  }
+}
+
+
+
+// SWIPER ///////////////////////////////////////////////////////////////////////////////////////////
+
+
+.swiper {
+  margin: 0 50px;
+  // padding: 0 50px;
+}
+
+.swiper-wrapper {
+  
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  img {
+    border: solid white 1px;
+    width: 234px;
+    height: 351px;
+  }
+}
+
+
+
+.swiper-button-prev, .swiper-button-next {
+  
+}
+
+
+// MODALE ////////////////////////////////////////////////////////////////////////
+
+@import '_modal';
+
+
+
+
+
+
+
+
+
