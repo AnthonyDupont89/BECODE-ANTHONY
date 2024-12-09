@@ -4,7 +4,25 @@
   box-sizing: border-box;
 }
 
+input {
+  display: block;
+}
+
+input:focus {
+  outline: none;
+}
+
+.valid {
+  border: solid 1px green;
+  border-radius: 2px;
+}
+
+.notvalid{
+  border: solid 1px firebrick;
+  border-radius: 2px;
+}
+
 p {
   color: firebrick;
-  font-size: 10px;
+  font-size: 8px;
 }

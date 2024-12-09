@@ -31,7 +31,7 @@ export default function App() {
 
     if (name === "password" && value.length < 9) {
       setErrors((prev) => {
-        return { ...prev, [name]: "Pseudo must be at least 9 characters" };
+        return { ...prev, [name]: "Password must be at least 9 characters" };
       });
     }
   };
@@ -40,6 +40,7 @@ export default function App() {
 
   console.log(errors);
   console.log(formData);
+  
 
 
   
@@ -87,6 +88,7 @@ export default function App() {
         }
       />
       {errors.password && <p>{errors.password}</p>}
+
       <button>Send</button>
     </form>
   );
