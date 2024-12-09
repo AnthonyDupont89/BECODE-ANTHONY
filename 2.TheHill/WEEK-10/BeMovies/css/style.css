@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+* {
+  color: #fff;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Inria sans";
+  background-color: #141517;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+header .container .logo {
+  font-size: 36px;
+  font-weight: 700;
+}
+header .container .logo span {
+  color: #cc0000;
+}
+header .container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+header .container ul a {
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+header .container ul a:hover {
+  background-color: #cc0000;
+}
+
+footer {
+  font-family: "Inria sans";
+  background-color: #141517;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+footer .container .logo {
+  font-size: 36px;
+  font-weight: 700;
+}
+footer .container .logo span {
+  color: #cc0000;
+}
+footer .container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .container ul a {
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+footer .container ul a:hover {
+  background-color: #cc0000;
+}
+footer .container .copyright {
+  color: #B8B8B8;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* GLOBAL ////////////////////////////////////////////////////////// */
+main {
+  font-family: "Inter";
+  background-color: #191b20;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* SECTIONS ////////////////////////////////////////////////////////// */
+.search {
+  margin: 50px 0 100px;
+}
+
+.searchBar {
+  margin: 0 auto 50px;
+  width: fit-content;
+}
+.searchBar form {
+  display: flex;
+}
+.searchBar input {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #141517;
+  border: none;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+.searchBar input:focus {
+  outline: none;
+}
+.searchBar button {
+  background-color: #cc0000;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-left: 50px;
+}
+
+.latest {
+  margin-bottom: 100px;
+}
+
+.genres {
+  margin-bottom: 100px;
+}
+
+select {
+  margin: 0 50px 15px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #141517;
+  text-align: center;
+  appearance: none; /* Masque la flèche native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+select:focus {
+  outline: none;
+}
+select option {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #141517;
+}
+
+.popupMovie {
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  width: 742px;
+  height: 526px;
+  background-color: #000000;
+  font-family: "Inria sans";
+}
+.popupMovie .cross {
+  position: fixed;
+  margin: 15px;
+  width: 16px;
+}
+.popupMovie .content {
+  display: flex;
+  padding: 80px;
+}
+.popupMovie .content .poster {
+  width: 50%;
+}
+.popupMovie .content .poster img {
+  width: 234px;
+  height: 351px;
+  border: solid white 1px;
+}
+.popupMovie .content .info {
+  width: 50%;
+}
+.popupMovie .content .info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+.popupMovie .content .info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.popupMovie .content .info .title {
+  margin-bottom: 5px;
+}
+.popupMovie .content .info .year {
+  margin-bottom: 10px;
+}
+.popupMovie .content .info .rate {
+  font-family: "Inter";
+  align-content: center;
+  margin-bottom: 15px;
+}
+.popupMovie .content .info .genre {
+  margin-bottom: 15px;
+}
+.popupMovie .content .info .synopsis {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 40px;
+}
+.popupMovie .content .info .cast {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.popupMovie .content .info .cast .actors {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.movieSwiper {
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+.movieSlide {
+  position: relative;
+}
+
+.moviePoster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.movieInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.movieInfo .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.movieInfo .year {
+  color: #B0B0B0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.movieInfo .genresText {
+  font-size: 0.875em;
+  font-size: 500;
+}
+.movieInfo .star {
+  width: 35px;
+  height: 34px;
+}
+.movieInfo .vote {
+  color: #CC0000;
+  font-size: 2em;
+  font-weight: 700;
+}

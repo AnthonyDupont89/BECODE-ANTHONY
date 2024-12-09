@@ -1,0 +1,30 @@
+lastName: "",
+age: "",
+email: "",
+phoneNumber: "",
+password: "",
+passwordCheck: ""
+
+
+<input type="text" placeholder="last name"/>
+<p></p>
+<input type="text" placeholder="age"/>
+<p></p>
+<input type="text" placeholder="email"/>
+<p></p>
+<input type="text" placeholder="phone number"/>
+<p></p>
+<input type="text" placeholder="password"/>
+<p></p>
+<input type="text" placeholder="repeat password"/>
+<p></p>
+
+
+
+
+
+
+// TEST
+// console.log({[name]: value});
+// console.log({name, value});
+// console.log(name, value);

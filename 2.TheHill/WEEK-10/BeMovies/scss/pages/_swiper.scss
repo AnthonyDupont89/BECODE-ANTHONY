@@ -1,0 +1,59 @@
+.movieSwiper {
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+.movieSlide{
+  position: relative;
+}
+
+.moviePoster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.movieInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .year {
+    color: #B0B0B0;
+    font-size: 1.25rem;;
+    font-weight: 700;
+  }
+  .genresText {
+    font-size: 0.875em;
+    font-size: 500;
+  }
+  .star {
+    width: 35px;
+    height: 34px;
+  }
+  .vote {
+    color: #CC0000;
+    font-size: 2em;
+    font-weight: 700;
+  }
+}

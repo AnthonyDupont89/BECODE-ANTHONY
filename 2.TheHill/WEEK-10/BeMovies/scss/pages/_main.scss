@@ -1,0 +1,112 @@
+/* GLOBAL ////////////////////////////////////////////////////////// */
+
+main {
+  font-family: 'Inter';
+  background-color: #191b20;
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+/* SECTIONS ////////////////////////////////////////////////////////// */
+
+.search {
+  margin: 50px 0 100px;
+}
+
+.searchBar {
+  margin: 0 auto 50px;
+  width: fit-content;
+  form {
+    display: flex;
+  }
+  input {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #141517;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    background-color: #cc0000;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-left: 50px;
+}
+
+
+.latest {
+  margin-bottom: 100px;
+}
+
+
+
+.genres {
+  margin-bottom: 100px;
+}
+
+select {
+  margin: 0 50px 15px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #141517;
+  text-align: center;
+
+  appearance: none; /* Masque la flèche native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+  option {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #141517;
+  }
+}
+
+
+
+
+
+
+// MODALE ////////////////////////////////////////////////////////////////////////
+
+@import '_modal';
+
+
+
+
+
+
+
+
+
