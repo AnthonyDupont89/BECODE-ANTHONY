@@ -14,6 +14,8 @@ function App() {
 
   const [errors, setErrors] = useState({});
 
+  const [isSubmitted, setIsSubmitted] = useState(false); // État pour suivre la soumission
+
   // Fonction pour gérer les changements dans les champs
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,6 +64,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setIsSubmitted(true); // Indiquer que le formulaire a été soumis
     const validationErrors = validateForm(formData); // Valider tous les champs
     setErrors(validationErrors); // Mettre à jour les erreurs
 
@@ -82,7 +85,7 @@ function App() {
           name="firstname"
           placeholder="firstname"
           onChange={handleChange}
-          className={errors.firstname ? "notvalid" : formData.firstname ? "valid" : ""}
+          className={errors.firstname ? "notvalid" :  isSubmitted && formData.firstname ? "valid" : ""}
         />
         {errors.firstname && <p>{errors.firstname}</p>}
 
@@ -91,7 +94,7 @@ function App() {
           name="lastname"
           placeholder="lastname"
           onChange={handleChange}
-          className={errors.lastname ? "notvalid" : formData.lastname ? "valid" : ""}
+          className={errors.lastname ? "notvalid" :  isSubmitted && formData.lastname ? "valid" : ""}
         />
         {errors.lastname && <p>{errors.lastname}</p>}
 
@@ -100,7 +103,7 @@ function App() {
           name="age"
           placeholder="age"
           onChange={handleChange}
-          className={errors.age ? "notvalid" : formData.age ? "valid" : ""}
+          className={errors.age ? "notvalid" :  isSubmitted && formData.age ? "valid" : ""}
         />
         {errors.age && <p>{errors.age}</p>}
 
@@ -109,7 +112,7 @@ function App() {
           name="email"
           placeholder="email"
           onChange={handleChange}
-          className={errors.email ? "notvalid" : formData.email ? "valid" : ""}
+          className={errors.email ? "notvalid" :  isSubmitted && formData.email ? "valid" : ""}
         />
         {errors.email && <p>{errors.email}</p>}
 
@@ -118,7 +121,7 @@ function App() {
           name="phoneNumber"
           placeholder="phoneNumber"
           onChange={handleChange}
-          className={errors.phoneNumber ? "notvalid" : formData.phoneNumber ? "valid" : ""}
+          className={errors.phoneNumber ? "notvalid" :  isSubmitted && formData.phoneNumber ? "valid" : ""}
         />
         {errors.phoneNumber && <p>{errors.phoneNumber}</p>}
 
@@ -127,7 +130,7 @@ function App() {
           name="password1"
           placeholder="password"
           onChange={handleChange}
-          className={errors.password1 ? "notvalid" : formData.password1 ? "valid" : ""}
+          className={errors.password1 ? "notvalid" :  isSubmitted && formData.password1 ? "valid" : ""}
         />
         {errors.password1 && <p>{errors.password1}</p>}
 
@@ -136,7 +139,7 @@ function App() {
           name="password2"
           placeholder="repeat password"
           onChange={handleChange}
-          className={errors.password2 ? "notvalid" : formData.password2 ? "valid" : ""}
+          className={errors.password2 ? "notvalid" : isSubmitted && formData.password2 ? "valid" : ""}
         />
         {errors.password2 && <p>{errors.password2}</p>}
 
