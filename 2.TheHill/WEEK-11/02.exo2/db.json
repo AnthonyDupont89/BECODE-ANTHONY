@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "59e1",
+      "content": "sortir les poubelles",
+      "completed": true
+    },
+    {
+      "id": "c79d",
+      "content": "faire la vaisselle",
+      "completed": true
+    },
+    {
+      "id": "2bbe",
+      "content": "promener le chien",
+      "completed": false
+    }
+  ]
+}
