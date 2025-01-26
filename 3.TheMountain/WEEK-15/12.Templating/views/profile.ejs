@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  
+  <%- include("partials/header") %>
+
+  <main>
+    <h2>👤 Profile de <%= user.name %></h2>
+    <p>Âge : <strong><%= user.age %> ans</strong></p>
+    <p>Ville : <strong><%= user.city %></strong></p>
+
+    <h3>🎯 Centre d'intérêt</h3>
+    <ul>
+      <% user.hobbies.forEach(hobby => { %>
+        <li>⭐ <%= hobby %></li>
+      <% }) %>
+    </ul>
+  </main>
+
+  <%- include("partials/footer") %>
+
+</body>
+</html>

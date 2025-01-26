@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #007bff;
+}

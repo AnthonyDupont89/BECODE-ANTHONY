@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un membre</title>
+</head>
+<body>
+  <h1>Ajouter un membre</h1>
+
+  <form action="/add" method="POST">
+    <label for="firstName">Prénom :</label>
+    <input type="text" id="firstName" name="firstName" require>
+    <br><br>
+
+    <label for="lastName">Nom :</label>
+    <input type="text" id="lastName" name="lastName" require>
+    <br><br>
+
+    <label for="age">Age :</label>
+    <input type="number" id="age" name="age" require>
+    <br><br>
+    
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <br>
+  <a href="/">Retour à l'accueil</a>
+</body>
+</html>

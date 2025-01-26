@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des Membres</title>
+</head>
+<body>
+  <h1>Liste des Membres</h1>
+
+  <% if (members.length === 0) { %>
+      <p>Aucun membre ajouté pour l'instant.</p>
+  <% } else { %>
+      <ul>
+          <% members.forEach(member => { %>
+              <li><%= member.firstName %> <%= member.lastName %> (Âge: <%= member.age %>)</li>
+          <% }) %>
+      </ul>
+  <% } %>
+
+  <br>
+  <a href="/add">Ajouter un membre</a>
+</body>
+</html>
