@@ -69,6 +69,39 @@ app.put("/api/users/:id", (req, res) => {
     res.json(users[userIndex])
 })
 
+
+app.delete("/api/users/:id", (req,res) => {
+    const { api_key } = req.query 
+    if(api_key !== "blabla") {
+        return res.status(403).json({ message: "Forbiden: Invalid API Key"})
+    }
+
+    const { id } = req.params
+
+    // Vérifier si l'utilisateur existe
+    const userIndex = users.findIndex(u => u.id === id)
+    if (userIndex === -1) {
+        return res.status(404).json({ message: "User not found" })
+    }
+
+    // Supprimer l'utilisateur
+    users.splice(userIndex, 1)
+
+    res.json({ message: "User deleted successfully" })
+})
+
+app.use((req,res) => {
+    console.log(`❌ Route inconnue : ${req.method} ${req.url}`);
+    res.status(404).json({ message: "This route doesn't exist" })
+})
+
+app.use((err, req, res, next) => {
+    console.log(err.stack);
+    res.status(500).json({ message: 'Something get wrong. Please try again later.'})
+    
+})
+
+
 app.listen(port, () => {
     console.log(`server running on http://localhost:${port}`);
 })
